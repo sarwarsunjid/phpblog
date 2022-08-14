@@ -1,7 +1,7 @@
 <?php 
 
-    include("Class/function.php");
-    $obj = new adminBlog();
+    include("Class/AdminBlog.php");
+    $obj = new AdminBlog();
 
     if(isset($_POST['admin_login'])){    
         $obj->admin_login($_POST);
