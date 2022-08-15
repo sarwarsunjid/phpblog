@@ -3,7 +3,7 @@
 - create a database named as blogproject
 - import the sql file 
 
-# LOgin Credential 
+# Login Credential 
 
   - username : admin@gmail.com
   - password : 123456
