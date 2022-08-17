@@ -1,17 +1,15 @@
 <?php 
 
-    include("Class/function.php");
+    include("Class/AdminBlog.php");
     //created object for accessing logout function
-    $obj = new adminBlog();
+    $obj = new AdminBlog();
     session_start();
     $id=$_SESSION['adminID'];
     if($id == null){
         header("location:index.php");
     }
-    if(isset($_GET['adminlogout'])){
-        if($_GET[adminlogout] == 'logout'){
-            $obj->adminLogout();
-        }
+    if(isset($_GET['adminlogout']) && $_GET['adminlogout'] == 'logout') {
+        $obj->adminLogout();
     }
 
 ?>
