@@ -1,8 +1,6 @@
 <?php
 
-namespace App\AdminBlog;
-
-require_once 'Connection.php';
+namespace Sanjid\Phpblog\Class;
 
 /**
  *------------------------------------------------------
@@ -34,7 +32,7 @@ class AdminBlog
      * @param $data
      * @return void
      */
-    public function admin_login($data)
+    public function admin_login($data): void
     {
         $admin_email = $data['admin_email'];
         $admin_pass = md5($data['admin_pass']);
