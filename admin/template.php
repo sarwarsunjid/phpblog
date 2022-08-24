@@ -1,6 +1,7 @@
 <?php 
 
-    include("Class/AdminBlog.php");
+    include("class/AdminBlog.php");
+    
     //created object for accessing logout function
     $obj = new AdminBlog();
     session_start();

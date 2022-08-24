@@ -1,5 +1,7 @@
 <?php
 
+namespace App\AdminBlog;
+
 require_once 'Connection.php';
 
 /**
