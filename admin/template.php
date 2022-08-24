@@ -1,5 +1,6 @@
+<?php include_once("inc/header.php") ?>
 <?php
-require_once '../vendor/autoload.php';
+
 
 //created object for accessing logout function
 use Sanjid\Phpblog\Class\AdminBlog;
@@ -16,7 +17,6 @@ if (isset($_GET['adminlogout']) && $_GET['adminlogout'] == 'logout') {
 
 ?>
 
-<?php include_once("inc/header.php") ?>
 <body class="sb-nav-fixed">
 <?php include_once("inc/topnav.php") ?>
 <div id="layoutSidenav">

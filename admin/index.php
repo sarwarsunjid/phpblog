@@ -1,8 +1,8 @@
+<?php include_once("inc/header.php") ?>
 <?php
-
 use Sanjid\Phpblog\Class\AdminBlog;
 
-require '../vendor/autoload.php';
+
 
 $obj = new AdminBlog();
 
@@ -25,7 +25,6 @@ if (isset($id)) {
 ?>
 
 
-<?php include_once("inc/header.php") ?>
 <body class="bg-primary">
 <div id="layoutAuthentication">
     <div id="layoutAuthentication_content">

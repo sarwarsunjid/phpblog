@@ -4,7 +4,7 @@ namespace Sanjid\Phpblog\Class;
 
 use Exception;
 use mysqli;
-use RuntimeException;
+use Sanjid\Phpblog\Exception\DatabaseException;
 use const Sanjid\Phpblog\Config\DATABASE;
 use const Sanjid\Phpblog\Config\HOST;
 use const Sanjid\Phpblog\Config\PASSWORD;
@@ -30,7 +30,7 @@ class Connection
      */
     public static function getInstance()
     {
-        
+
         if (!isset(self::$instance)) {
             (new self)->connect();
         }
@@ -48,7 +48,7 @@ class Connection
             // realpath(dirname(__DIR__));
             self::$instance = new mysqli(HOST, USER, PASSWORD, DATABASE);
         } catch (Exception $e) {
-            throw new RuntimeException('Database connection error ' . $e->getMessage());
+            throw new DatabaseException('Database connection error ' . $e->getMessage());
         }
     }
 }

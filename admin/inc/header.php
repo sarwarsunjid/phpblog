@@ -1,4 +1,10 @@
-<?php require_once '../vendor/autoload.php' ?>
+<?php
+
+require_once '../vendor/autoload.php' ?>
+<?php
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

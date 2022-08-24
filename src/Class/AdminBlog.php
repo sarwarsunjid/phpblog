@@ -2,6 +2,10 @@
 
 namespace Sanjid\Phpblog\Class;
 
+use Exception;
+use mysqli_result;
+use Sanjid\Phpblog\Exception\DatabaseException;
+
 /**
  *------------------------------------------------------
  * Write Purpose of This Class and its USage
@@ -87,8 +91,8 @@ class AdminBlog
 
         $query = "SELECT * FROM category";
 
-        if (mysqli_query($this->conn, $query)) {
-            return mysqli_query($this->conn, $query);
+        if ($result = mysqli_query($this->conn, $query)) {
+            return $result;
         }
 
     }
@@ -99,11 +103,9 @@ class AdminBlog
      */
     public function display_data_by_id($id)
     {
-
         $query = "SELECT * FROM category WHERE cat_id=$id";
 
-        if (mysqli_query($this->conn, $query)) {
-            $returnData = mysqli_query($this->conn, $query);
+        if ($returnData = mysqli_query($this->conn, $query)) {
             return mysqli_fetch_assoc($returnData);
         }
     }
