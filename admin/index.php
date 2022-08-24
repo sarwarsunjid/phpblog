@@ -1,7 +1,11 @@
 <?php 
 
-    include("Class/AdminBlog.php");
-    $obj = new AdminBlog();
+    // include("Class/AdminBlog.php");
+
+    require '../vendor/autoload.php';
+    use App\AdminBlog;
+
+    $obj = new App\AdminBlog();
 
     if(isset($_POST['admin_login'])){    
         $obj->admin_login($_POST);

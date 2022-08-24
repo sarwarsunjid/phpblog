@@ -1,5 +1,5 @@
 <?php
-const DATABASE = 'phpblog';
+const DATABASE = 'blogproject';
 const HOST = 'localhost';
 const USER = 'root';
 const PASSWORD = '';
