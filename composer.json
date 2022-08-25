@@ -19,6 +19,7 @@
     "ext-mysqli": "*",
     "ext-json": "*",
     "ext-pdo": "*",
-    "ext-intl": "*"
+    "ext-intl": "*",
+        "psr/log": "1.*"
   }
 }

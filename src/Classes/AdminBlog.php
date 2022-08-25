@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanjid\Phpblog\Class;
+namespace Sanjid\Phpblog\Classes;
 
 use Exception;
 use mysqli_result;
@@ -8,7 +8,7 @@ use Sanjid\Phpblog\Exception\DatabaseException;
 
 /**
  *------------------------------------------------------
- * Write Purpose of This Class and its USage
+ * Write Purpose of This Classes and its USage
  * -----------------------------------------------------
  */
 class AdminBlog

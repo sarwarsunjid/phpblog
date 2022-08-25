@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanjid\Phpblog\Class;
+namespace Sanjid\Phpblog\Classes;
 
 use Exception;
 use mysqli;
