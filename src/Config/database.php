@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanjid\Phpblog\Config;
+namespace Sunjid\Phpblog\Config;
 
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Run;

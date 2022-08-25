@@ -3,7 +3,7 @@
 
 
 //created object for accessing logout function
-use Sanjid\Phpblog\Class\AdminBlog;
+use Sunjid\Phpblog\Classes\AdminBlog;
 
 $obj = new AdminBlog();
 session_start();

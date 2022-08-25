@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanjid\Phpblog\Exception;
+namespace Sunjid\Phpblog\Exception;
 
 use Exception;
 

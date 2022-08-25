@@ -1,14 +1,14 @@
 <?php
 
-namespace Sanjid\Phpblog\Classes;
+namespace Sunjid\Phpblog\Classes;
 
 use Exception;
 use mysqli;
-use Sanjid\Phpblog\Exception\DatabaseException;
-use const Sanjid\Phpblog\Config\DATABASE;
-use const Sanjid\Phpblog\Config\HOST;
-use const Sanjid\Phpblog\Config\PASSWORD;
-use const Sanjid\Phpblog\Config\USER;
+use Sunjid\Phpblog\Exception\DatabaseException;
+use const Sunjid\Phpblog\Config\DATABASE;
+use const Sunjid\Phpblog\Config\HOST;
+use const Sunjid\Phpblog\Config\PASSWORD;
+use const Sunjid\Phpblog\Config\USER;
 
 
 class Connection
@@ -48,7 +48,7 @@ class Connection
             // realpath(dirname(__DIR__));
             self::$instance = new mysqli(HOST, USER, PASSWORD, DATABASE);
         } catch (Exception $e) {
-            throw new DatabaseException('Database connection error ' . $e->getMessage());
+            throw new DatabaseException('Database connection error ' . $e->getMesSuge());
         }
     }
 }

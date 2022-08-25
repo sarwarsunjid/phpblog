@@ -1,5 +1,5 @@
 {
-    "name": "sanjid/phpblog",
+    "name": "sunjid/phpblog",
     "type": "project",
     "require-dev": {
         "phpunit/phpunit": "^9.5",
@@ -8,7 +8,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sanjid\\Phpblog\\": "src/"
+            "Sunjid\\Phpblog\\": "src/"
         },
         "files": [
             "src/Config/database.php",
