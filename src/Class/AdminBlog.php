@@ -1,8 +1,10 @@
 <?php
 
-namespace App\AdminBlog;
+namespace Sanjid\Phpblog\Class;
 
-require_once 'Connection.php';
+use Exception;
+use mysqli_result;
+use Sanjid\Phpblog\Exception\DatabaseException;
 
 /**
  *------------------------------------------------------
@@ -34,7 +36,7 @@ class AdminBlog
      * @param $data
      * @return void
      */
-    public function admin_login($data)
+    public function admin_login($data): void
     {
         $admin_email = $data['admin_email'];
         $admin_pass = md5($data['admin_pass']);
@@ -89,8 +91,8 @@ class AdminBlog
 
         $query = "SELECT * FROM category";
 
-        if (mysqli_query($this->conn, $query)) {
-            return mysqli_query($this->conn, $query);
+        if ($result = mysqli_query($this->conn, $query)) {
+            return $result;
         }
 
     }
@@ -101,11 +103,9 @@ class AdminBlog
      */
     public function display_data_by_id($id)
     {
-
         $query = "SELECT * FROM category WHERE cat_id=$id";
 
-        if (mysqli_query($this->conn, $query)) {
-            $returnData = mysqli_query($this->conn, $query);
+        if ($returnData = mysqli_query($this->conn, $query)) {
             return mysqli_fetch_assoc($returnData);
         }
     }
