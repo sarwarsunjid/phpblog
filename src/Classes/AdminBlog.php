@@ -1,10 +1,10 @@
 <?php
 
-namespace Sanjid\Phpblog\Classes;
+namespace Sunjid\Phpblog\Classes;
 
 use Exception;
 use mysqli_result;
-use Sanjid\Phpblog\Exception\DatabaseException;
+use Sunjid\Phpblog\Exception\DatabaseException;
 
 /**
  *------------------------------------------------------

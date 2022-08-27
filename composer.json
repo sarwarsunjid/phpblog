@@ -1,10 +1,11 @@
 {
-  "name": "sanjid/phpblog",
+  "name": "sunjid/phpblog",
   "type": "project",
+
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Sanjid\\Phpblog\\": "src/"
+      "Sunjid\\Phpblog\\": "src/"
     },
     "files": [
       "src/Config/database.php",
@@ -16,10 +17,10 @@
     "ext-json": "*",
     "ext-pdo": "*",
     "ext-intl": "*",
-    "psr/log": "1.*"
+    "psr/log": "1.*",
+    "php": "^7.2|^7.3|>=8.0"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "^9.5",
     "filp/whoops": "^2.14"
   }

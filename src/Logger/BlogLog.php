@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanjid\Phpblog\Logger;
+namespace Sunjid\Phpblog\Logger;
 
 class BlogLog
 {

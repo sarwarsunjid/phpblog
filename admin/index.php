@@ -1,6 +1,6 @@
 <?php include_once("inc/header.php") ?>
 <?php
-use Sanjid\Phpblog\Classes\AdminBlog;
+use Sunjid\Phpblog\Classes\AdminBlog;
 
 
 
